@@ -1,7 +1,18 @@
 # Replace the "ANSWER HERE" with your answer
 
 def remove_elements(list_to_remove_elements):
-    return "ANSWER HERE"  # Remove this line and implement
+    if len(list_to_remove_elements) < 1:
+		list_to_return = []
+    elif len(list_to_remove_elements) < 5:
+		list_to_return = del list_to_remove_elements[0]
+    elif len(list_to_remove_elements) < 6:
+		list_to_return = del list_to_remove_elements[0]
+		list_to_return = del list_to_remove_elements[5]
+    else:
+		list_to_return = del list_to_remove_elements[0]
+		list_to_return = del list_to_remove_elements[5]
+		list_to_return = del list_to_remove_elements[6]
+    return list_to_return
 
 
 def add_elements(list_to_add_elements):
