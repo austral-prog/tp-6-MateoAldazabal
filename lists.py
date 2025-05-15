@@ -25,24 +25,13 @@ def add_elements(list_to_add_elements):
 
 def is_empty(list_to_check):
 	tamaño = len(list_to_check)
-	if tamaño == 0:
-		devolucion = 'true'
-	else:
-		devolucion = 'false'
-	return devolucion
+	return tamaño == 0
     
 def check_lists(list_to_compare1, list_to_compare2):
 	l1 = len(list_to_compare1)
 	l2 = len(list_to_compare2)
-	if l1 < 3 and l2 < 3:
-		answer = "False"
-	elif l1 < 3 and l2 >=3:
-		answer = "False"
-	elif l1 >= 3 and l2 < 3:
-		answer = "False"
-	else:
-		answer = (list_to_compare1[2] == list_to_compare2[2])
-	return answer
+	return (l1 >=3) and (l2 >= 3) and (list_to_compare1[2] == list_to_compare2[2])
+
 
 def list_of_lists(list_of_lists_to_modify):
 	list1 = list_of_lists_to_modify[0]
